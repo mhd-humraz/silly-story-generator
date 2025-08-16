@@ -128,9 +128,9 @@
     const selectedTheme = storyType.value;
     
     // Choose a random template from the selected theme (or random theme if selected)
-    const theme = selectedTheme === 'random' ? 
-      randomValueFromArray(Object.keys(storyTemplates).filter(k => k !== 'random') : 
-      selectedTheme;
+    const theme = selectedTheme === 'random' 
+  ? randomValueFromArray(Object.keys(storyTemplates).filter(k => k !== 'random')) 
+  : selectedTheme;
     
     const template = randomValueFromArray(storyTemplates[theme]);
     
@@ -195,3 +195,4 @@
 </body>
 
 </html>
+
